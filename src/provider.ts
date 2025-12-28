@@ -21,6 +21,13 @@ interface ToolboxState {
   }>;
 }
 
+interface ToolboxTool {
+  displayName: string;
+  launchCommand: string;
+  productCode: string;
+  configDir: string;
+}
+
 interface JetBrainsProject {
   name: string;
   path: string;
@@ -40,7 +47,7 @@ export default class JetBrainsSearchProvider<
   extension: T;
   app: Shell.App | undefined;
   appInfo?: ReturnType<Shell.App["get_app_info"]> | undefined;
-  toolboxApps: Map<string, any> = new Map();
+  toolboxApps: Map<string, ToolboxTool> = new Map();
   ideIconCache = new Map<string, Shell.App | null>();
   // Set by the SearchProvider interface
   display: unknown;
@@ -121,7 +128,7 @@ export default class JetBrainsSearchProvider<
 
   _loadProjectsFromIDE(
     jetbrainsConfigDir: string,
-    tool: any,
+    tool: ToolboxTool,
     maxProjects: number,
   ) {
     // Buscar el directorio de configuración del IDE
@@ -159,7 +166,11 @@ export default class JetBrainsSearchProvider<
     }
   }
 
-  _parseRecentProjects(xmlPath: string, tool: any, maxProjects: number) {
+  _parseRecentProjects(
+    xmlPath: string,
+    tool: ToolboxTool,
+    maxProjects: number,
+  ) {
     const content = readFile(xmlPath);
     if (!content) return;
 
