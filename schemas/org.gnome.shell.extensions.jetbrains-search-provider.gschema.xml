@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.jetbrains-search-provider" path="/org/gnome/shell/extensions/jetbrains-search-provider/">
+    <key name="override-results-order" type="b">
+      <default>false</default>
+      <summary>Override search results order</summary>
+      <description>Whether to override the default search results order to prioritize JetBrains projects. Requires disabling and re-enabling the extension to take effect.</description>
+    </key>
+    
+    <key name="show-ide-name" type="b">
+      <default>false</default>
+      <summary>Show IDE name</summary>
+      <description>Whether to show the IDE name next to the project name in search results.</description>
+    </key>
+    
+    <key name="max-projects" type="i">
+      <default>20</default>
+      <summary>Maximum projects per IDE</summary>
+      <description>Maximum number of recent projects to show for each IDE.</description>
+    </key>
+  </schema>
+</schemalist>

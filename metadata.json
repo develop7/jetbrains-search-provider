@@ -1,0 +1,14 @@
+{
+  "name": "JetBrains Toolbox Search Provider",
+  "description": "Search and open recent JetBrains IDE projects from GNOME Shell search",
+  "uuid": "jetbrains-search-provider@branrgx.github.io",
+  "shell-version": [
+    "46",
+    "47",
+    "48",
+    "49"
+  ],
+  "url": "https://github.com/branrgx/jetbrains-search-provider",
+  "version": 1,
+  "settings-schema": "org.gnome.shell.extensions.jetbrains-search-provider"
+}
