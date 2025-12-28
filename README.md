@@ -1,5 +1,8 @@
 # JetBrains Toolbox Search Provider
 
+![GitHub License](https://img.shields.io/github/license/branrgx/jetbrains-search-provider)
+
+
 ## Description
 
 ![screenshot.png](https://github.com/user-attachments/assets/1cff1c9f-e9b4-4f55-b27d-8641a9874617)
