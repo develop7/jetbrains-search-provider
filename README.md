@@ -2,6 +2,7 @@
 
 ## Description
 
+![screenshot.png](https://github.com/user-attachments/assets/1cff1c9f-e9b4-4f55-b27d-8641a9874617)
 
 JetBrains Toolbox Search Provider is a GNOME Shell extension that integrates JetBrains IDEs' recent projects into GNOME Shell search, allowing you to quickly open your projects directly from the activities overview.
 
